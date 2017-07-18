@@ -1,0 +1,314 @@
+body{ color: $awesome_dark_blue; font-family: "Microsoft Yahei",STXihei,"Source Sans Pro",sans-serif !important;  }
+hr{
+    width: 30%;
+}
+header{
+    box-shadow: -8px -5px 10px 2px rgb(0, 0, 0);
+    z-index: 155;
+    margin-bottom: 2px;
+    .navbar{
+        margin-bottom: 0;
+        .navbar-brand{
+            padding: 5px 40px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+.header-image{
+    height: 600px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    .hero{
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        h1{
+            font-size: 62px;
+            font-weight: 100;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+#home-a{
+    background: $awesome_color_grey;
+    padding: 30px 0;
+    img{
+        width: 100%;
+    }
+}
+
+#home-b{
+    background: $awesome-main-color;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    h2{
+        margin-bottom: 25px;
+    }
+    .fa{
+        font-size: 62px;
+    }
+}
+
+#home-c{
+    padding: 30px 0;
+    h2{
+        margin-bottom: 25px;
+        font-size: 42px;
+        color: $awesome-main-color;
+    }
+    img{
+        box-shadow: 0px 2px 9.4px 0.6px rgba(0, 0, 0, 0.47);
+        margin-bottom: 20px;
+    }
+    .btn-primary{
+        padding: 10px 40px;
+    }
+}
+
+#home-d{
+    padding: 30px 0;
+    background: url(../images/submitanddone.jpg) no-repeat center -200px;
+    height: 700px;
+    .container{
+        .call-action{
+            border-radius: 8px;
+            background-color: $awesome-main-color;
+            opacity: 0.95;
+            padding: 20px 40px;
+            h2{
+                font-size: 42px;
+                color: #fff;
+                line-height: 150%;
+            }
+            p{
+                line-height: 150%;
+            }
+            a{
+                margin-bottom: 10px;
+            }
+        }
+        
+        
+    }
+}
+
+/* 
+	================================
+	 Single-resume
+	================================
+*/
+#resume-order{
+    overflow: hidden;
+}
+#awesome-order-preview{
+    padding: 30px 0;
+    background-color: $awesome_color_brand;
+    hr{
+        width: 100%;
+    }
+    p{ font-size: 16px; letter-spacing: 0.05px; text-indent: 2em; line-height: 1.5em; color: $awesome_color_grey; padding: 12px 0; }
+    h3{ margin-top: 0; margin-bottom: 10px; color:#fff; letter-spacing: 0.2em; 
+        small{ color:$awesome_color_grey; }
+    }
+    span{
+        font-size: 42px; font-weight: 700; color: cornsilk;
+    }
+}
+
+#awesome-order-contents{
+    padding: 30px 0;
+}
+
+#awesome-order-action{
+    background-color: $awesome_color_brand;
+    padding: 100px 0;
+    h2{ font-size: 48px; letter-spacing: 0.2em; color: #fff; padding-bottom: 30px; line-height: 1.5em;}
+    a{ padding: 20px 50px; font-size: 18px; border: 1px solid #fff; color: #fff; transition: all 0.5s ease;
+        &:hover{
+            background-color: #fff; color: $awesome_color_brand;
+        }
+    }
+}
+
+#awesome-order-designers{
+    padding: 60px 0;
+    .awesome-designer{
+        padding: 60px 0;
+    }
+    .awesome-designer-background{
+        border-left: 1px solid $awesome_color_brand;
+        border-right: 1px solid $awesome_color_brand;
+        @media ( max-width: 767px ){
+            border: none;
+        }
+    }
+}
+
+#awesome-order-form{
+    background: url(../images/orders.jpg) no-repeat bottom right;
+    background-size: cover;
+    .background-filter{
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .container{
+        opacity: 1;
+        .list-group{
+            .list-group-item{
+                .list-group-item-text{
+                    color: #fff;
+                }
+                &.active {
+                    background-color: $awesome-main-color;
+                    border-color: $awesome-main-color;
+                }
+                .btn{
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+.file_button_container,
+.file_button_container input {
+    height: 47px;
+    width: 263px;
+}
+
+.file_button_container {
+    background: transparent url(http://i.stack.imgur.com/BT5AB.png) left top no-repeat;
+}
+
+.file_button_container input {
+    opacity: 0;
+}
+
+/*
+=================================================
+ archive pages
+=================================================
+*/
+
+.post-header-image{
+    height: 300px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    .hero{
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        h1{
+            font-size: 62px;
+            font-weight: 100;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+.blog-main{
+    padding-top: 20px;
+    .blog-post{
+        .post-content-data{
+
+        }
+        padding: 15px;
+        &:nth-of-type(odd){
+            background-color: lighten($awesome_dark_blue,72) ;
+        }
+        h2{
+            margin-top: 0;
+            letter-spacing: .2em;
+            a{
+                text-decoration: none;
+                color: $awesome_color_brand;
+                &:hover{
+                    transition: all 0.2s ease;
+                    color: $awesome_color_hover;
+                }
+            }
+        }
+    }
+}
+.blog-sidebar{
+    padding-top: 20px;
+}
+
+/*
+=================================================
+ footer
+=================================================
+*/
+
+footer{
+    margin-top: 2px;
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.13);
+    z-index: 155;
+    padding: 20px 0;
+    h3{
+        color: $awesome-main-color;
+        &::before{
+            content: '|';
+            padding-right: 3px;
+        }
+    }
+    .footer-nav{
+        padding-left: 5px;
+        li{
+            list-style: none;
+            line-height: 1.5em;
+            a{
+                color: $awesome_color_brand;
+                &:hover{
+                    color: $awesome_color_hover;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*
+=================================================
+ Page in development
+=================================================
+*/
+.dev-header-image{
+    height: 300px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    background-color: $awesome_color_brand;
+    .hero{
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        h1{
+            font-size: 62px;
+            font-weight: 100;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,27 @@
+{
+  "name": "awesome-theme",
+  "version": "1.0.0",
+  "description": "awesome theme for wordpress with precomplier",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "youtube"
+  ],
+  "author": "Wilton Lee",
+  "license": "GPL V2",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglify": "^2.0.1",
+    "font-awesome": "^4.7.0"
+  }
+}

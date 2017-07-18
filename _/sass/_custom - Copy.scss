@@ -1,0 +1,203 @@
+/* 
+	================================
+	 Variables
+	================================
+*/
+/*Color code*/
+$awesome_color_dark_blue:#323c46;
+$awesome_color_brand:#24a560;
+$awesome_color_grey:#EEEEF2;
+$awesome_color_hover:#005e37;
+$awesome_color_action:#3eb866;
+
+html,
+body{ margin: 0 auto; padding: 0; color: $awesome_color_dark_blue; font-family: "Microsoft Yahei",STXihei,"Source Sans Pro",sans-serif !important;  min-width: 320px !important; }
+
+
+/* 
+	================================
+	 Header-Nav
+	================================
+*/
+.navbar-default .navbar-nav>li>a{
+    color: $awesome_color_brand;
+    &:hover{
+        color: $awesome_color_hover;
+    }
+}
+.awesome-nav{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 0px;
+    .site-logo{
+        a{ height: 100%; padding: 6px 24px; transition: all 0.5 ease;
+            &:hover{ opacity: 0.65; }
+            img{ height: 60px;}
+        }
+    }
+    background-color: #fff;
+    
+    ul{ 
+        >li{
+            >a{ padding-top: 28px; padding-bottom: 28px; font-size: 20px; transition: all 0.4s ease;
+                &:hover{ background-color: $awesome_color_grey !important; }
+            }
+        }
+    }
+    
+    @media (max-width:767px){
+        &{ text-align: center; box-shadow: none;
+            ul{ padding: 0; margin: 0 -15px; background-color:aliceblue; 
+                li{ 
+                    a:hover{ background-color: $awesome_color_dark_blue; }
+                }
+            }
+            .site-logo{ text-align: center; height: 100%;
+                a{ height: 100%; width: 100%;
+                    img{ display: inline-block; }
+                }
+            }
+            .navbar-header{
+                button{ width: 100%;
+                    &.navbar-toggle { margin-right: 0;  margin: 0; float: none; border-radius: 0; border: none; padding-top: 0; transition: all 0.5s ease;
+                        &:hover,
+                        &:focus,
+                        &:active,
+                        &:visited{ background-color: transparent; opacity: 0.65; }
+                    }
+                    span.icon-bar{ width: 30px; display: inline-block;}
+                }
+            }
+        }
+    }
+}
+
+.header-image{
+	height: 626px;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+/* 
+	================================
+	 Content front page
+	================================
+*/
+#content{
+    overflow: hidden;
+}
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+#tb-resume-intro{
+    h2{ color: $awesome_color_brand;}    
+}
+
+#tb-resume-feature-1{
+    background-color: $awesome_color_grey;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    h2{ color: $awesome_color_brand; font-size: 36px; padding-bottom: 20px;}
+    .awesome-feature-block{
+        padding-bottom: 30px;
+    }
+}
+
+#tb-resume-template{
+    h2{ padding-bottom: 20px;}
+    .awesome-resume-preview{
+        box-shadow: 0px 2px 9.4px 0.6px rgba(0, 0, 0, 0.47); margin-bottom: 20px;
+    }
+    .awesome-load-more{ padding-top: 30px; padding-bottom: 20px;
+        button{ padding: 15px 70px; font-size: 32px; letter-spacing: 0.2em; 
+            &.awesome-btn{ background-color: $awesome_color_brand; border: 2px solid $awesome_color_brand; color: #fff; transition: all 0.5s ease;}
+            &:hover,
+            &:active,
+            &:visited,
+            &:focus{ background-color: transparent; color: $awesome_color_brand; border: 2px solid $awesome_color_brand; outline: none; outline-offset: 0; }
+        }
+    }
+}
+
+#tb-resume-howto{
+    background-color: $awesome_color_action;
+    color: $awesome_color_grey;
+    h2{ color: #fff; }
+}
+
+
+/* 
+	================================
+	 Single-resume
+	================================
+*/
+#resume-order{
+    overflow: hidden;
+}
+#awesome-order-preview{
+    background-color: $awesome_color_brand;
+    p{ font-size: 16px; letter-spacing: 0.05px; text-indent: 2em; line-height: 1.5em; color: $awesome_color_grey; padding: 12px 0; }
+    h3{ margin-top: 0; margin-bottom: 10px; color:#fff; letter-spacing: 0.2em; 
+        small{ color:$awesome_color_grey; }
+    }
+    span{
+        font-size: 42px; font-weight: 700; color: cornsilk;
+    }
+}
+
+#awesome-order-action{
+    background-color: $awesome_color_brand;
+    padding: 100px 0;
+    h2{ font-size: 48px; font-weight: bold; letter-spacing: 0.2em; color: #fff; padding-bottom: 30px; line-height: 1.5em;}
+    a{ padding: 20px 50px; font-size: 18px; border: 1px solid #fff; color: #fff; transition: all 0.5s ease;
+        &:hover{
+            background-color: #fff; color: $awesome_color_brand;
+        }
+    }
+}
+
+#awesome-order-designers{
+    padding: 60px 0;
+    .awesome-designer{
+        padding: 60px 0;
+    }
+    .awesome-designer-background{
+        border-left: 1px solid $awesome_color_brand;
+        border-right: 1px solid $awesome_color_brand;
+        @media ( max-width: 767px ){
+            border: none;
+        }
+    }
+}
+
+#awesome-order-form{
+    background-color: $awesome_color_grey;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* 
+	================================
+	 Footer
+	================================
+*/
+footer{
+    margin-top: 3px;
+	border-top: solid 1px #c7c9c8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    z-index: 155;
+    h3{ color: $awesome_color_brand; padding-left: 15px;}
+    .awesome-footer{ background-color: transparent; }
+    address{ padding-left: 15px;}
+    .awesome-socail{ padding-left: 15px;}
+
+}
+
+/* 
+	================================
+	 Media Query
+	================================
+*/
+
