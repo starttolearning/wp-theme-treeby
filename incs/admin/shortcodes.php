@@ -26,11 +26,10 @@ add_shortcode('tooltip', 'tb_tooltip');
 
 // Shortcode Popover
 function tb_popover( $attrs, $content = null){
-    
-    /**
-     * [popover title="title" placement="top" trigger="click" content="this is popover content"]this is click content[/popover]
-     */
-    // get the attributes
+	/**
+	 * [popover title="title" placement="top" trigger="click" content="this is popover content"]this is click content[/popover]
+	 */
+	// get the attributes
     $attrs = shortcode_atts( 
                 array(
                     'placement' => 'top',
@@ -232,3 +231,22 @@ function awesome_gallery_shortcode( $attr ) {
 
 	return $output;
 }
+
+// Shortcode COMMENT Form
+function tbc_comment_form( $attrs, $content = null){
+    /**
+     * [comment-form]
+     */
+    // get the attributes
+    $attrs = shortcode_atts( 
+            array( ), 
+            $attrs, 
+            'user-comment'
+        );
+    
+    ob_start();
+    include 'user-comment-form.php';
+    return ob_get_clean();
+}
+
+add_shortcode('user-comment', 'tbc_comment_form');

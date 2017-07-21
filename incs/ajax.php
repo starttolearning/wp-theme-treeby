@@ -70,12 +70,7 @@ function tb_save_order_form(){
             echo 0;
         }
     }
-
-
-
-
-
-
+    
 	die();
 
 }

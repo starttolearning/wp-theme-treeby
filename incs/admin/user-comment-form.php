@@ -1,25 +1,27 @@
 <div class="list-group">
     <div class="list-group-item active">
-        <h2 class="list-group-item-heading">填写你的简历需要呈现的信息</h2>
-        <p class="list-group-item-text">通过使用我们提供给大家的简单模板，按照要求填写简历的详细内容（研究表明：详细和结构化的建立更能帮助求职者），然后通过提交该文档由我们的设计师完成排版和设计。</p>
+        <h2 class="list-group-item-heading">请给我们的本次服务打分^_^</h2>
+        <p class="list-group-item-text">请你对我们的服务进行评价和建议，你的评价和建议对我们今后向你提供更好的服务打下坚实的基础。</p>
     </div>
-    <form id="tbContactForm" class="list-group-item form-horizontal" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+    <form id="tbCommentForm" class="list-group-item form-horizontal" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
         <input type="hidden" name="post_id" id="post_id" value="<?php the_ID(); ?>" />
         <?php wp_nonce_field( 'user_file_upload', 'user_file_upload_nonce' ); ?>
-
+        
+        <!-- 订单号码 -->
         <div class="form-group">
-            <label class="control-label col-sm-2" for="name">姓名</label>
+            <label class="control-label col-sm-2" for="order_id">订单号码</label>
             <div class="col-sm-10">
-                <input type="text" placeholder="你的姓名" id="name" name="name" class="form-control">
+                <input type="text" placeholder="填写订单号码" id="order_id" name="order_id" class="form-control">
                 <span id="helpBlock2" class="help-block">*此字段不能为空!</span>
             </div>
         </div>
 
+        <!-- 订单负责人 -->
         <div class="form-group">
-            <label class="control-label col-sm-2" for="qq">QQ</label>
+            <label class="control-label col-sm-2" for="person_in_charge">订单负责人</label>
             <div class="col-sm-10">
-                <input type="text" placeholder="你的QQ" id="qq" name="qq" class="form-control">
+                <input type="text" placeholder="订单负责人" id="person_in_charge" name="person_in_charge" class="form-control">
                 <span id="helpBlock2" class="help-block">*此字段不能为空!</span>
             </div>
         </div>

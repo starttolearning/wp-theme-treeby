@@ -12,8 +12,15 @@
    includes
  * ============================================
  */
+// Add custom menu for the application
 require_once get_template_directory().'/incs/menu.php';
-require_once get_template_directory().'/incs/admin/custom-post-type.php';
+
+// Defined CPT for app
+require_once get_template_directory().'/incs/admin/cpts/tb-resume.php';
+require_once get_template_directory().'/incs/admin/cpts/tb-order.php';
+require_once get_template_directory().'/incs/admin/cpts/tb-designer.php';
+require_once get_template_directory().'/incs/admin/cpts/tb-comment.php';
+
 require_once get_template_directory().'/incs/admin/taxonomy.php';
 require_once get_template_directory().'/incs/admin/shortcodes.php';
 require_once get_template_directory().'/incs/enqueue.php';
