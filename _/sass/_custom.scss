@@ -18,12 +18,16 @@ header{
 }
 
 .header-image{
-    height: 600px;
+    height: 550px;
     width: 100%;
     display: table;
     text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     .hero{
-        display: table-cell;
+        // display: table-cell;
+        display: none;
         vertical-align: middle;
         color: #fff;
         h1{
