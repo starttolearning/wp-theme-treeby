@@ -1,7 +1,7 @@
 <section id="home-a">
    <div class="container">
         <div class="row">
-            <div class="col-sm-8"><img src="<?php echo the_post_thumbnail_url( 'post-thumbnail' ); ?>" /></div>
+            <div class="col-sm-8"><img src="<?php echo the_post_thumbnail_url( ); ?>" /></div>
             <!-- col-sm-6 -->
             <div class="col-sm-4">
                 <h2>制作简历再也不麻烦了</h2>

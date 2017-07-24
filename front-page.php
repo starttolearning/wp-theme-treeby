@@ -16,6 +16,7 @@
     </div>
 </div>
 <div id="content">
+<?php get_template_part( 'template-parts/content', 'feedback' ); ?>
     <?php if(  have_posts()): ?>
         <?php while( have_posts()) : the_post(); ?>
             <?php get_template_part( 'template-parts/content', 'front' ); ?>

@@ -12,6 +12,9 @@
    includes
  * ============================================
  */
+// Import the helper functions
+require_once get_template_directory().'/incs/helper.php';
+
 // Add custom menu for the application
 require_once get_template_directory().'/incs/menu.php';
 
